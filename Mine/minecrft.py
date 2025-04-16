@@ -12,7 +12,7 @@ GUI = Entity(model="quad",scale_y=0.9,scale_x=0.98,parent=GUI_BORDER,color=color
 GUI_controles = Entity(model="quad",scale_x=0.2,scale_y=0.3,parent=GUI_BORDER,position=(-0.38,0.64,0),color=color.hex('#494949'))
 text_controles = Text(text="E: Ayuda",position=(-0.5,-0.37,0))
 
-Bloque_Gui2_1 = Entity(model="quad",scale_x=0.1,scale_y=0.8,position=(-0.42,0,0),color=color.hex('#737373'),parent=GUI)
+Bloque_Gui2_1 = Entity(model="quad",scale_x=0.1,scale_y=0.8,position=(-0.42,0,0),color=color.hex('#494949'),parent=GUI)
 Bloque_Gui2_2 = Entity(model="quad",scale_x=0.1,scale_y=0.8,position=(-0.3,0,0),color=color.hex('#737373'),parent=GUI)
 Bloque_Gui2_3 = Entity(model="quad",scale_x=0.1,scale_y=0.8,position=(-0.18,0,0),color=color.hex('#737373'),parent=GUI)
 Bloque_Gui2_4 = Entity(model="quad",scale_x=0.1,scale_y=0.8,position=(-0.06,0,0),color=color.hex('#737373'),parent=GUI)
