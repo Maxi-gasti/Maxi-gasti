@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* HEADER */
+
+header {
+    background: #222;
+    color: #5b0ee9;
+    box-sizing: border-box;
+    width: 100%;
+    height: 6vh;
+    padding: 10px;
+    position: fixed;
+    display: flex;
+    z-index: 5;
+    box-shadow: 0 0 12px rgba(0, 4, 255, 0.467);
+}
+
+header h3 {
+    width: 10vw;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+header a:visited, header a:link {
+    color: #5b0ee9;
+}
+
+/* SECTION */
+
+main {
+    display: flex;
+}
+
+section {
+    background-color: #333;
+    box-sizing: border-box;
+    width: 80vw;
+    height: 100vh;
+    padding: 20px;
+    padding-left: 5vw;
+    padding-right: 20vw;
+    padding-top: 10vh;
+    
+}
+
+.welcome-title {
+    color: #111111;
+}
+
+.data-title {
+    color: #121212;
+    border-bottom: 2px #111 solid;
+}
+
+.data-title span {
+    color: #191919;
+    font-size: 0.7em;
+}
+
+.data-box {
+    font-weight: 600;
+    color: #121212;
+}
+
+.password-data {
+    background-color: #121212;
+}
+
+.password-data:hover {
+    background-color: transparent;
+}
+
+/* ASIDE */
+
+aside {
+    box-sizing: border-box;
+    padding: 20px;
+    padding-top: 10vh;
+    background-color: #222;
+    width: 20vw;
+    height: 100vh;
+}
+
+aside a, aside a:visited {
+    text-decoration: none;
+    color: #111;
+    transition: all 0.5s ease;
+}
+
+aside h3 {
+    margin: 3vh auto;
+    background-color: #5813c9;
+    padding: 5px 0;
+    padding-left: 10px;
+    font-size: 1.1vw;
+    border: 3px solid #181818;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    
+}
+
+aside h3:hover {
+    background-color: #5D0CE2;
+    scale: 1.05;
+}

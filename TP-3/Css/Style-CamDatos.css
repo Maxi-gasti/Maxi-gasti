@@ -1,0 +1,127 @@
+body {
+    background: linear-gradient(to bottom,#000d,#000);
+    font-family: sans-serif;
+    color: #111;
+    margin: 0;
+}
+
+/* HEADER */
+
+header {
+    background: #222;
+    color: #5b0ee9;
+    box-sizing: border-box;
+    width: 100%;
+    height: 6vh;
+    padding: 10px;
+    position: fixed;
+    display: flex;
+    z-index: 5;
+    box-shadow: 0 0 12px rgba(0, 4, 255, 0.467);
+}
+
+header h3 {
+    width: 10vw;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+header a:visited, header a:link {
+    color: #5b0ee9;
+}
+
+/* FORM */
+
+main {
+    width: 100%;
+    height: 100%;
+    padding-top: 6vh;
+}
+
+form {
+    margin: 0 auto;
+    background-color: #333;
+    box-sizing: border-box;
+    padding: 20px;
+    max-width: 550px;
+    width: 80vw;
+    border-left: 3px solid rgb(112, 17, 221);
+    border-right: 3px solid rgb(112, 17, 221);
+    box-shadow: 0px 0px 20px rgb(112, 17, 221);
+}
+
+h2 {
+    width: 50%;
+    text-align: center;
+    margin: 10px 25%;
+    margin-bottom: 15px;
+
+}
+
+fieldset {
+    border: 3px solid #222;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: 600;
+    border-bottom: 3px solid rgb(112, 17, 221);
+    padding: 0 10px;
+}
+
+label {
+    line-height: 2;
+    font-weight: 600;
+}
+
+input {
+    margin: 2px 0;
+    padding-left: 5px;
+    width: 100%;
+    border: none;
+    border-left: 2px solid rgb(112, 17, 221);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #3d3d3d;
+}
+
+.input-checkbox {
+    width: 20px; 
+}
+
+.input-submit {
+    border: 3px solid #222;
+    border-radius: 5px;
+    margin: 20px 10%;
+    width: 80%;
+}
+
+.Terms-Link {
+    font-weight: 600;
+    font-size: 18;
+    color: #111;
+}
+
+.Terms-Link:visited {
+    color: #111;
+}
+
+span {
+    padding: 0 3px;
+    font-size: 0.7em;
+    color: #1b1b1b;
+}
+
+select, option {
+    background-color: #333;
+    border-color: #222;
+    color: #151515;
+    border-radius: 3px;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding-top: 2px;
+}

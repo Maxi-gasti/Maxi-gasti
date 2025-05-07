@@ -1,0 +1,470 @@
+body {
+    background-color: #444;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* ------------------- HEADER ------------------- */
+
+header {
+    background: #222;
+    color: #5b0ee9;
+    box-sizing: border-box;
+    width: 100%;
+    height: 6vh;
+    padding: 10px;
+    position: fixed;
+    display: flex;
+    z-index: 5;
+    box-shadow: 0 0 12px rgba(0, 4, 255, 0.467);
+}
+
+header h3 {
+    width: 10vw;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    width: 20vw;
+    margin-left: 70vw;
+    height: 100%;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:visited, header a:link {
+    color: #5b0ee9;
+}
+
+header a p {
+    margin: 0;
+    width: 10vw;
+    font-weight: 600;
+    font-size: 1.13vw;
+}
+
+
+/* ------------------- SECTIONS ------------------- */
+
+.main-section,
+.about-section,
+.projects-section,
+.register-section {
+    max-height: 100vh;
+    max-width: 100vw;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.main-section {
+    background: linear-gradient(to bottom,#000,rgba(37, 27, 165));
+}
+
+.about-section {
+    background: linear-gradient(to bottom,rgba(0, 4, 255, 0.467),rgba(10, 68, 177, 0.467));
+    background-image: url("../Images/about-BG2.png");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.projects-section {
+    background-image: url("../Images/proyect-BG2.png");
+    background-size: cover;
+    background-position: top;
+}
+
+.register-section {
+    background-image: url("../Images/register1.png");
+}
+
+/* ------------------- HOVERS ------------------- */
+
+.title-hover,
+.about-hover,
+.projects-hover,
+.register-hover {
+    width: 100%;
+    height: 100%;
+}
+
+.title-hover {
+    background-color: #000c;
+}
+
+.about-hover {
+    background: linear-gradient(to bottom,#000c,#0006);
+}
+
+.projects-hover {
+    background: linear-gradient(to bottom,#000a,#0006);
+}
+
+.register-hover {
+    background: linear-gradient(to bottom,#0007,#000e);
+
+}
+
+/* ------------------- TITLES/SUBTITLES ------------------- */
+
+.title-main,
+.title-projects,
+.title-about,
+.title-register {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1.5s forwards;
+    text-align: center;
+    padding-top: 30vh;
+    font-size: 8vw;
+    text-shadow: 0px 0px 8px #560ea8;
+    margin: 0;
+}
+
+.title-projects,
+.title-about,
+.title-register {
+    font-size: 5vw;
+    padding-top: 10vh;
+
+}
+
+.title-about {
+    text-shadow: 0 0 8px #560ea8;
+}
+
+.title-projects {
+    text-shadow: 0 0 8px #c657e2;
+}
+
+.title-register {
+    padding-bottom: 5vh;
+    text-shadow: 0px 0px 8px #7609f3;
+}
+
+.subtitle-main {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 2s forwards;
+    padding-top: 3vh;
+    margin: 0;
+    color: #000;
+    text-shadow: 0px 0px 4px #560ea8;
+    font-size: 2.5vw;
+}
+
+/* ------------------- ABOUT SECTION ------------------- */
+
+.about-box {
+    margin-top: 5vh;
+    display: flex;
+    width: 100%;
+    background: linear-gradient(to bottom,#00000001,#000e); 
+    height: 100%;
+    max-height: 75%;
+    box-sizing: border-box;
+}
+
+.about-box-text {
+    max-width: 50%;
+    padding: 0 5%;
+    margin: auto 0;
+    font-size: 1.3em;
+    color: #560ea8;
+    -webkit-text-stroke: 2px #2c0a53;
+    paint-order: stroke fill;
+    text-shadow: 0 0 8px #7609f3;
+}
+
+.about-box-logobox {
+    width: 18vw;
+    height: 18vw;
+    margin: auto;
+    border: 2px solid #2c0a53;
+    border-radius: 15px;
+    transition: all 0.25s ease-out;
+}
+
+.about-box-logobox img {
+    width: 80%;
+    height: 80%;
+    padding: 5% 10%;
+    background-size: cover;
+    background-position: center;
+    transform: translateY(10%);
+    transition: all 0.25s ease-out;
+}
+
+.about-box-logobox p {
+    text-align: center;
+    margin: 0;
+    opacity: 0;
+    font-weight: 600;
+    color: #8439da;
+    text-shadow: 0 0 5px #7d19f0;
+    transition: all 0.25s ease-out;
+}
+
+.about-box-logobox:hover {
+    border: 2px solid #6d3ba5;
+}
+
+.about-box-logobox:active {
+    border: 2px solid #8439da;
+    background: radial-gradient(transparent,#8439da76);
+}
+
+.about-box-logobox:hover img {
+    transform: translateY(0px);
+    width: 80%;
+    height: 80%;
+    padding: 5% 10%;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-box-logobox:hover p {
+    opacity: 1;
+}
+
+/* ------------------- PROJECT SECTION ------------------- */
+
+.project-gallery {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    background-color: #0001;
+}
+
+.project-article {
+    box-sizing: border-box;
+    height: 60vh;
+    width: 30%;
+    margin: 3vh 3vw;
+    background-color: #0003;
+    opacity: 0.6;
+    border: 2px #2222 solid;
+    border-radius: 5px;
+    transition: all 0.75s ease-out;
+}
+
+.project-article div {
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.5s ease;
+}
+
+.project-article h3{
+    margin: 0;
+    padding-top: 10%;
+    transform: translateY(30px);
+    opacity: 1;
+    color: #000;
+    text-shadow: 0px 0px 8px #f7a0ff;
+    font-size: 1.8em;
+    transition: all 0.5s ease-out;
+}
+
+.project-article p {
+    color: #000;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 0 0 5px #f4f4f4;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    padding: 0 20px;
+}
+
+.project-article:hover {
+    border-color: #e6d5ff;
+    opacity: 1;
+}
+
+.project-article:hover h3 {
+    color: #e6d5ff;
+    text-shadow: 0px 0px 10px #000;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-article:hover p {
+    color: #e6d5ff;
+    text-shadow: 0px 0px 10px #000;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-article:hover div{
+    background-color: #0009;
+}
+
+/* ------------------- REGISTER SECTION ------------------- */
+
+.register-box {
+    height: 100%;
+    background-color: #0005;
+}
+
+.register-description-box {
+    background: linear-gradient(to right, #000f, #0004);
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30px;
+    border-top: 3px #e6d5ff solid;
+    border-bottom: 3px #e6d5ff solid;
+    border-radius: 5px;
+    margin: 0;
+    display: flex;
+}
+
+.register-description-text {
+    width: 60%;
+}
+
+.register-description-text p, .register-description-text h3 {
+    margin: 0;
+    padding-left: 10px;
+    text-align: left;
+    border-left: 2px #f7a0ff solid;
+    font-size: 1.2em;
+    color: #7609f3;
+}
+
+.register-description-text h3 {
+    line-height: 2;
+}
+
+.register-logo {
+    width: 18%;
+    margin: auto;
+    border-radius: 10%;
+    box-shadow: 0px 0px 20px #000;
+    transition: all 0.5s ease;
+}
+
+.register-logo:hover {
+    scale: 1.05;
+}
+
+.link-formulario {
+    text-decoration:underline;
+    color: #333;
+}
+
+.link-formulario:visited, .link-formulario:link {
+    color: #333;
+}
+
+
+/* ------------------- FOOTER SECTION ------------------- */
+
+footer {
+    background: #222;
+    padding: 10vh 10vw;
+    padding-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #c4c4c4;
+    font-weight: 600;
+}
+
+.footer-box {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-box-section {
+    width: 30%;
+    margin: auto;
+    background-color: #222;
+}
+
+#footer-box-section-1 {
+    margin-left: 0;
+}
+
+.footer-box-links {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #222;
+}
+
+.footer-link-x,
+.footer-link-yt,
+.footer-link-reddit,
+.footer-link-instagram,
+.footer-link-tiktok {
+    margin: 10px 20px;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    opacity: 0.7;
+}
+
+.footer-link-x {
+    margin-left: 0;
+}
+
+.footer-box-section a {
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.footer-box-section a:visited, .footer-box-section a:link {
+    color: #d4d4d4;
+}
+
+.footer-box-links a {
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.copyright-text {
+    padding-left: 10px;
+    font-size: 0.8em;
+    color: #a4a4a4;
+    border-left: 2px solid #4f4f4f;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+#article-1,#article-2,#article-3 {
+    background-size: cover;
+    background-position: center;
+}
+
+#article-1 {
+    background-image: url("../images/Project-5.png");
+}
+
+#article-2 {
+    background-image: url("../images/Project-4.jpg");
+}
+
+#article-3 {
+    background-image: url("../images/Project-3.jpg");
+}
+
+@keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+}
